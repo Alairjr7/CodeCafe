@@ -32,6 +32,10 @@
     border-bottom: 3px solid #A52A2A;
 }
 
+.button_Mobile{
+    color: black;
+}
+
 .button_Mobile,
 #mobile_menu {
     display: none;
