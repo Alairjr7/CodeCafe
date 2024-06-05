@@ -13,7 +13,7 @@ function Testimony({ img, name, description }) {
                 </div>
                 <div>
                     <div className="perfil_name">
-                        <h4>{name}</h4>
+                        <h4 style={{color:'#A52A2A'}}>{name}</h4>
                         <div className='likes'>
                             <FaStar />
                             <FaStar />
@@ -23,7 +23,7 @@ function Testimony({ img, name, description }) {
                         </div>
                     
                     </div>
-                    <p>{description} </p>
+                    <p style={{color:'#3f3e3ecc'}}>{description} </p>
                 </div>
             </div>
 
