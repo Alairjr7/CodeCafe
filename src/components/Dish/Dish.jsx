@@ -1,18 +1,20 @@
-import { MdFavorite } from "react-icons/md"
 import { FaStar } from "react-icons/fa";
 import { MdOutlineShoppingBag } from "react-icons/md";
-
 import PropTypes from 'prop-types';
+
 
 
 import './Dish.css'
 
-function Dish({ img, alt, title, description, price }) {
+function Dish({ img, alt, title, description, price, openModal , onClick}) {
+    const handleClick = () => {
+        onClick({ img, alt, title, description, price });
+        openModal();
+    };
+ 
+
     return (
-        <div className="dish">
-            <div className="favorite_container">
-                <MdFavorite />
-            </div>
+        <div className="dish" onClick={handleClick}>
             <img src={img} alt={alt} className="dish_img" />
             <h4 className="dish_title">{title}</h4>
             <p className="dish_description">{description}</p>
@@ -28,6 +30,7 @@ function Dish({ img, alt, title, description, price }) {
                 <p className="dish_price">R$ {price},00</p>
                 <button className="bag"><MdOutlineShoppingBag /></button>
             </div>
+          
         </div>
     )
 }

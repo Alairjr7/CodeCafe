@@ -8,24 +8,14 @@
     gap: 10px;
     width: 18%;
     padding: 20px;
-    min-height: 450px;
+    min-height: 400px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
-.favorite_container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #A52A2A;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px 0px 0px 10px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
+.dish:hover{
+    opacity: 0.9;
 }
 
 
@@ -35,9 +25,12 @@
     border-radius: 50%;
 }
 
+.dish_title{
+    color: #A52A2A;
+}
 
 .dish_description {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     color: rgb(68, 68, 68);
 }
@@ -50,12 +43,15 @@
 }
 
 .likes {
+    display: flex;
+    gap: 2px;
     color: #FFD700;
 }
 
 .likes span {
     color: black;
     margin-left: 5px;
+    font-size: 14px;
 }
 
 .bag {

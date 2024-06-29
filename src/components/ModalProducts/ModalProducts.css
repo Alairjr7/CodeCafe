@@ -1,0 +1,129 @@
+.modal_container{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 14px 1px black;
+    background-color: #e6e5e5;
+    width: 550px;
+    padding: 0px 20px;
+    border-radius: 15px;
+    
+}
+
+.close_container{
+    width: 100%;
+    text-align: end;
+}
+
+.close{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.modalImg_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modalImg_container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.modalTitle{
+    text-align: center;
+    color: #A52A2A ;
+    margin: 10px 0px
+}
+
+.modalDescription_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalDescription{
+    font-size: 15px;
+    color: rgb(97, 96, 96);
+    width: 500px;
+}
+
+.deadline_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.price_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px 0px;
+}
+
+.price{
+    background-color: #3DDC15;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.quantity_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:  5px;
+}
+
+.remover, .adicionar{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px  black;
+}
+
+.modalButton_container{
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 40px;
+}
+
+.buttonAdd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    padding: 3px;
+    background-color:white;
+    color: #A52A2A;
+    font-weight: 500;
+    box-shadow: 0px 0px 5px 0px  black;
+    cursor: pointer;
+}
+
+.heart{
+    color: #A52A2A;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 520px) {
+    .modal_container{
+        width: 90%;       
+    }
+
+
+}
+    

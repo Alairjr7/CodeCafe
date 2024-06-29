@@ -1,0 +1,288 @@
+
+
+
+.container_login{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #A52A2A;
+}
+
+.slogan h1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.slogan p{
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border: 0.5px solid #838282cc;
+    border-left: none;
+    border-bottom-right-radius: 20px ;
+    border-top-right-radius: 20px ;
+}
+
+.login h2{
+    margin-top: 56px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: #A52A2A;
+}
+
+.enter{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+   
+}
+
+.enter h3{
+    margin-top: 70px;
+    color: #A52A2A;
+    font-weight: normal;
+    width: 100%;
+    font-size: 25px;
+    
+}
+
+.containerBack{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.back{
+    font-size: 40px;
+    color: #A52A2A;
+}
+
+.container_options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.input-options{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px;
+}
+
+.container_inputUser, .container-inputPassword{
+    position: relative;
+    display: inline-block;
+}
+
+.user, .password{
+    color: #A52A2A;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.inputUser, .inputPassword{
+    width: 300px;
+    padding-left: 30px;
+    outline: none;
+    height: 40px;
+    border: 0.5px solid #868585;
+    border-radius: 15px;
+    box-shadow:0px 0px 5px 0px #686868 ;
+}
+
+.enter_options{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.enter_options a, .enter_options label{
+    font-size: 13px;
+}
+
+.enter_options a{
+    color: #A52A2A;
+}
+
+.remember{
+    display: flex;
+    gap: 3px;
+}
+
+.buttonEnter{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #A52A2A;
+    width: 150px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.buttonEnter:hover{
+    opacity: 0.9;
+}
+
+.ou{
+    margin-bottom: 10px;
+}
+.login_options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.container_google, .container_facebook{
+    padding: 5px 10px;
+    box-shadow:0px 0px 5px 0px #686868 ;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.google{
+    color: rgb(66, 133, 244);
+}
+
+.facebook{
+    color: rgb(59, 89, 152);
+}
+
+.createAccount{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.createAccount a{
+    color: #A52A2A;
+}
+
+@media screen and (max-width: 1000px) {
+    .container_login{
+       
+        width: 100%;
+        height: 80%;
+       
+ 
+    }
+
+    .slogan h1{
+        font-size: 50px;
+    }
+    
+    .slogan p{
+        font-size: 15px;
+    }
+
+    .enter{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 520px){
+    .container_login{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .slogan{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+       
+    }
+
+    .slogan h1{
+        font-size: 30px;
+    }
+    
+    .slogan p{
+        font-size: 15px;
+    }
+
+    .login {
+        width: 100%;
+        border: none;
+        border-left: none;
+        border-bottom-right-radius: 0px ;
+        border-top-right-radius: 0px ;
+      
+    }
+
+    .login h2{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+
+    .enter h3{
+        margin-top: 40px;
+    }
+
+    .containerBack{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .back{
+        font-size: 35px;
+        color: white;
+    }
+
+    .createAccount{
+        margin-bottom: 20px;
+    }
+}

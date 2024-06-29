@@ -2,7 +2,12 @@ html{
     scroll-behavior: smooth;
 }
 
-header {
+/* ----> HEADER <---- */
+
+
+#headerHome {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 15px 8%;
     position: fixed;
@@ -10,6 +15,70 @@ header {
     background-color: white;
     z-index: 4;
 }
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    color: #A52A2A;
+
+}
+
+.order_here {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A52A2A;
+    border: none;
+    padding: 10px 14px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: opacity .3s ease;
+    color: black;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+   
+}
+
+.nav_item.active a {
+    color: #2b2a2a;
+    text-decoration: underline 2px #A52A2A ;
+}
+
+.button_Mobile{
+    color: black;
+}
+
+.button_Mobile,
+#mobile_menu {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+
+
 
 .container {
     margin: 20px auto;
@@ -37,7 +106,7 @@ header {
 
 .container {
     width: 100%;
-    height: 100vh;
+
    
 }
 
@@ -69,14 +138,14 @@ header {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: none;
+    border: 0.5px solid rgb(161, 160, 160);
     padding: 10px 14px;
     font-weight: 600;
     border-radius: 12px;
     cursor: pointer;
     transition: opacity .3s ease;
-    box-shadow: 0px 0px 0px 1.3px rgb(161, 160, 160);
     color: black;
+    
 }
 
 .social_buttons {
@@ -85,6 +154,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 5px 0px;
 }
 
 .social_buttons a {
@@ -250,6 +320,39 @@ footer .social_buttons{
 }
 
 @media screen and (max-width: 1170px) {
+
+
+    #nav_list,
+    #navbar .order_here {
+        display: none;
+    }
+
+    .button_Mobile {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        
+    }
+
+    #mobile_menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    #mobile_nav_list{
+        list-style: none;
+    }
+    
+    .nav_item{
+        margin: 12px 0px;
+        text-align: center;
+        
+    }
 
     .container h1 {
         font-size: 2em;
